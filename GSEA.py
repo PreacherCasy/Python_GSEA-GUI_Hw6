@@ -49,18 +49,18 @@ class App(QMainWindow):
 
         self.textbox = QLineEdit(self)
         self.textbox.move(20, 20)
-        self.textbox.resize(280,40)
-        self.textbox.setToolTip("Please enter GEO id")
+        self.textbox.resize(300,60)
+        self.textbox.setToolTip("GEO ID")
         self.textbox.resize(self.textbox.sizeHint())
         
         self.textbox2 = QLineEdit(self)
         self.textbox2.move(20, 90)
-        self.textbox2.resize(280,40)
-        self.textbox2.setToolTip("Please enter Gene list")
+        self.textbox2.resize(300,60)
+        self.textbox2.setToolTip("Gene Name or Gene Name List")
         self.textbox2.resize(self.textbox2.sizeHint())
 
 
-        self.button = QPushButton('Get p_value', self)
+        self.button = QPushButton('Count p-value', self)
         self.button.move(20,150)
  
         self.button.clicked.connect(self.on_click)
